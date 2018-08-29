@@ -419,18 +419,17 @@
       
         
           
-            <h1 id="系统架构"><a href="#系统架构" class="headerlink" title="系统架构"></a>系统架构</h1><p>系统架构是指，整合应用系统程序大的结构。<br>1.SSM</p>
-<h1 id="代理模式"><a href="#代理模式" class="headerlink" title="代理模式"></a>代理模式</h1><hr>
-<h1 id="面向对象设计原则"><a href="#面向对象设计原则" class="headerlink" title="面向对象设计原则"></a>面向对象设计原则</h1><ol>
-<li>开闭原则：面向修改关闭，面向扩展开放</li>
-<li>接口隔离原则</li>
-<li>组合聚合原则</li>
-<li>里式替换原则</li>
-<li>最少知识原则</li>
-<li>单一职责原则</li>
-<li>依赖倒置原则</li>
+            <h1 id="系统架构"><a href="#系统架构" class="headerlink" title="系统架构"></a>系统架构</h1><p>系统架构是指，整合应用系统程序大的结构。</p>
+<ol>
+<li>SSM</li>
 </ol>
-
+<hr>
+<h1 id="代理模式"><a href="#代理模式" class="headerlink" title="代理模式"></a>代理模式</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* 1. 静态代理</span><br><span class="line"></span><br><span class="line">代理类在没有编译时就存在，目标类和代理类必须同时实现同一个接口。（必须有接口）</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* 2. jdk动态代理</span><br><span class="line"></span><br><span class="line">代理类在运行时才被创建，需要用到反射机制，目标类和代理类必须实现同一个接口。（必须有接口）</span><br></pre></td></tr></table></figure>
+<p><img src="https://note.youdao.com/yws/public/resource/bc123cc064e3cb13eb4a75f2e4f3ac30/xmlnote/06E056FE34B64203931430E354C47637/301" alt=""><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">* 3. cglib动态代理</span><br><span class="line"></span><br><span class="line">cglig动态代理可以在没有接口的前提下创建代理类。</span><br><span class="line">创建步骤：1.实现cglib的MethodIntercept接口</span><br><span class="line">          2.创建增强器</span><br><span class="line">          3.设置目标类</span><br><span class="line">          4.设置回调函数</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://note.youdao.com/yws/public/resource/bc123cc064e3cb13eb4a75f2e4f3ac30/xmlnote/CD2B8581281D4F40A381933A8AC4996A/290" alt=""></p>
+<hr>
+<h1 id="面向对象设计原则"><a href="#面向对象设计原则" class="headerlink" title="面向对象设计原则"></a>面向对象设计原则</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1. 开闭原则：面向修改关闭，面向扩展开放</span><br><span class="line">2. 接口隔离原则</span><br><span class="line">3. 组合聚合原则</span><br><span class="line">4. 里式替换原则</span><br><span class="line">5. 最少知识原则</span><br><span class="line">6. 单一职责原则</span><br><span class="line">7. 依赖倒置原则</span><br></pre></td></tr></table></figure>
           
         
       
